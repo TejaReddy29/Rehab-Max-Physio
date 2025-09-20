@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>REHAB MAX PHYSIO</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header id="header">
+    <div class="container">
+      <a href="#home" class="logo" aria-label="REHAB MAX PHYSIO logo">
+        <!-- Simple SVG Logo -->
+        <svg width="180" height="50" viewBox="0 0 180 50" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="logoTitle">
+          <title id="logoTitle">REHAB MAX PHYSIO Logo</title>
+          <text x="0" y="35" font-family="Arial, sans-serif" font-weight="700" font-size="28" fill="#0077cc">
+            REHAB MAX
+          </text>
+          <text x="110" y="35" font-family="Arial, sans-serif" font-weight="400" font-size="28" fill="#00aaff">
+            PHYSIO
+          </text>
+        </svg>
+      </a>
+      <nav>
+        <ul id="nav-menu">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#treatments" class="nav-link">Treatments We Offer</a></li>
+          <li><a href="#contact" class="nav-link">Contact Us</a></li>
+          <li><a href="#about" class="nav-link">About Us</a></li>
+        </ul>
+      </nav>
+      <button id="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="section">
+      <div class="container">
+        <h1>Welcome to REHAB MAX PHYSIO</h1>
+        <p>Your journey to better health starts here.</p>
+      </div>
+    </section>
+
+    <section id="treatments" class="section">
+      <div class="container">
+        <h2>Treatments We Offer</h2>
+        <ul>
+          <li>Manual Therapy</li>
+          <li>Exercise Rehabilitation</li>
+          <li>Electrotherapy</li>
+          <li>Sports Injury Rehabilitation</li>
+          <li>Post-Surgical Rehabilitation</li>
+          <li>Geriatric Physiotherapy</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Book an Appointment</h2>
+        <form id="appointment-form" novalidate>
+          <div class="form-group">
+            <label for="firstName">First Name *</label>
+            <input type="text" id="firstName" name="firstName" required />
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last Name *</label>
+            <input type="text" id="lastName" name="lastName" required />
+          </div>
+          <div class="form-group">
+            <label for="place">Place *</label>
+            <input type="text" id="place" name="place" required />
+          </div>
+          <div class="form-group">
+            <label for="date">Select Date (Mon-Sat) *</label>
+            <input type="date" id="date" name="date" required />
+          </div>
+          <div class="form-group">
+            <label for="time">Select Time (9am-6pm) *</label>
+            <select id="time" name="time" required>
+              <option value="">--Select Time--</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="mobile">Mobile Number *</label>
+            <input type="tel" id="mobile" name="mobile" pattern="^\d{10}$" placeholder="10 digit number" required />
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+        <div id="form-message" role="alert" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About Us</h2>
+        <p>REHAB MAX PHYSIO is dedicated to providing exceptional physiotherapy services to help you recover and regain your quality of life.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 REHAB MAX PHYSIO. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
